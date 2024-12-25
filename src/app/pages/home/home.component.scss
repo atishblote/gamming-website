@@ -1,0 +1,49 @@
+
+
+.gs_hero{
+
+    .swiper img{
+        position: relative;
+overflow: hidden;
+background-color: #292e38;
+border-bottom: 3px solid #dd163b;
+border-radius: 4px;
+display: flex;
+align-items: center;
+height: 450px;
+width: 100%;
+object-fit: cover;
+    }   
+    .content_div {
+        position: absolute;
+        width: 400px;
+        height: auto;
+        background: rgba(24,28,35,.95);
+        right: 30px;
+        top: 30px;
+        padding: 32px;
+        border-radius: 10px;
+        color: white;
+    }
+    .title{
+        font-size: 1.32rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    p{
+            font-size: 14px;
+            line-height: 1.5rem;
+            letter-spacing: 0.5px;
+            margin-bottom: 18px;
+    }
+}
+
+.inner_ion{
+    background-color: #292e38;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+}

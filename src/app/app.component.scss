@@ -1,0 +1,21 @@
+.gs_main_header{
+    background-color: rgba(0,0,0,.6);
+}
+
+.gs_top_header{
+    .top_icon i{
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        border-radius: 50px;
+        background-color: rgba(255,255,255,.75);
+        color: #181c23;
+        margin-right: 5px;
+
+    }
+    .right_side i{
+        margin-right: 20px;
+        color: white;
+        font-size: 14px;
+    }
+}

@@ -6,8 +6,31 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
   <app-root></app-root>
+
+
+  <script src="https://kit.fontawesome.com/a70ecb7221.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true, // Enables continuous loop mode
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+     
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  
+
 </body>
 </html>
