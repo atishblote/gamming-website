@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>GammingWebsite</title>
@@ -7,30 +8,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
+
 <body>
   <app-root></app-root>
 
 
   <script src="https://kit.fontawesome.com/a70ecb7221.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+\
 
 
   <script>
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper_banner', {
       loop: true, // Enables continuous loop mode
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
       },
-     
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
       autoplay: {
         delay: 3000,
         disableOnInteraction: false,
       },
     });
+
+    const latestPostSwiper = new Swiper('.latest_post_swiper', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+
+
   </script>
-  
+
+
+
+
 
 </body>
+
 </html>

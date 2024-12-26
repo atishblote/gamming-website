@@ -13,4 +13,65 @@ html , body{
 body{
     background-image: url('https://res.cloudinary.com/dnagrjvtq/image/upload/v1735042582/bg-top_uooaui.png');
     background-color: #181c23;
+    background-repeat: no-repeat;
+}
+
+.bg-primary{
+    background-color: #dd163b;
+}
+.bg-button{
+    background:linear-gradient(45deg, #eeec26, #c9990e);
+    color: #000 !important;
+    font-weight: 700;
+    transition: 0.2s ease-in-out;
+}
+.bg-button:hover {
+    transform: scale(1.1);
+}
+.bg-secondary{
+    background-color: #292e38;
+}
+.text-primary{
+    // color: #cca01f;
+    color: #e4b528;
+}
+.text-secondary{
+    color:#fff;
+}
+.text-text{
+    color: #A0A7AB;
+}
+.section-title .title .before , .section-title .title .after {
+    background: #2f3541;
+    height: 3px;
+}
+.section-title .title {
+    display: grid;
+    grid-template-columns: 10% 36% auto;
+    width: 100%;
+    align-items: center;
+    column-gap: 20px ;
+}
+.section-title{
+    width: 100%;
+}
+
+.secondary-btn{
+        background-color: #2f3541;
+        border-color: #16181e;
+        border-style: solid;
+        color: white;
+}
+.primary-btn{
+    background-color: #dd163b;
+    border-color: #dd163b;
+    border-style: solid;
+    color: white;
+}
+.primary-btn:hover{
+    background-color: #2f3541;
+}
+.secondary-btn:hover{
+    background:linear-gradient(45deg, #eeec26, #c9990e);
+    color: black;
 }
