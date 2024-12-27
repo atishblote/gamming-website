@@ -31,9 +31,9 @@ body{
 .bg-secondary{
     background-color: #292e38;
 }
-.text-primary{
+.text-primary, .nav-active{
     // color: #cca01f;
-    color: #e4b528;
+    color: #e4b528 !important;
 }
 .text-secondary{
     color:#fff;
@@ -74,4 +74,75 @@ body{
 .secondary-btn:hover{
     background:linear-gradient(45deg, #eeec26, #c9990e);
     color: black;
+}
+.gs_main_header{
+    background-color: rgba(0,0,0,.6);
+}
+#navbar-default li span{
+    cursor: pointer;
+}
+.gs_top_header{
+    .top_icon i{
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+        border-radius: 50px;
+        background-color: rgba(255,255,255,.75);
+        color: #181c23;
+        margin-right: 5px;
+
+    }
+    .right_side i{
+        margin-right: 20px;
+        color: white;
+        font-size: 14px;
+    }
+}
+footer{
+    background: linear-gradient(45deg, #0000007a, #181c23cc), url(https://res.cloudinary.com/dnagrjvtq/image/upload/v1735282830/bg-bottom_opkuum.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    [type=text] , [type=email] , textarea{
+        padding: 6.5px 10px;
+        font-size: 1em;
+        font-weight: 400;
+        color: #fff;
+        background-color: transparent;
+        border: 1px solid #313947;
+        border-radius: 4px;
+        transition: .15s border-color;
+    }
+
+    ::placeholder{
+        color: #A0A7AB;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    a:hover{
+        color: #e4b528;
+    }
+}
+
+.footer-bottom{
+
+    .bottom_icon a {
+        background: #ffffff;
+        color: #000;
+        width: 30px;
+        transition: 0.2s ease;
+        display: inline-flex;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        margin-right: 9px;
+        border-radius: 50px;
+        font-size: 18px;
+    }
+    .bottom_icon a:hover {
+        background: #e4b528;
+        color: white;
+    }
 }

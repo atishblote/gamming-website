@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-contact',
   standalone: true,
   imports: [HeroSectionComponent],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  templateUrl: './contact.component.html',
+  styleUrl: './contact.component.scss'
 })
-export class AboutComponent {
-  title:string="About Us"
+export class ContactComponent {
+  title:string = "Contact Us"
+  // itemList = sign(this.title);
+
+
 }

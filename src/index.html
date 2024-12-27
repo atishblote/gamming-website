@@ -13,10 +13,11 @@
 
 <body>
   <app-root></app-root>
-
-
+  
+  
   <script src="https://kit.fontawesome.com/a70ecb7221.js" crossorigin="anonymous"></script>
-\
+
+
 
 
   <script>
@@ -63,6 +64,38 @@
 
 
 
+
+    const sss = new Swiper('.about_feature_swiper', {
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+      },
+    });
+
+     
+  
+
+
+
+    
   </script>
 
 

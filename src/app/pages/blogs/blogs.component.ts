@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
 
 @Component({
-  selector: 'app-about',
+  selector: 'app-blogs',
   standalone: true,
   imports: [HeroSectionComponent],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss'
+  templateUrl: './blogs.component.html',
+  styleUrl: './blogs.component.scss'
 })
-export class AboutComponent {
-  title:string="About Us"
+export class BlogsComponent {
+  title:string = "All Blogs"
 }

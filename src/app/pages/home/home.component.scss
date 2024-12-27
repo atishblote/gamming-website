@@ -157,4 +157,46 @@
       }
     }
   }
+
+
+  // most polular
+  .most-popular{
+
+
+    .product_d_flex{
+      .image_div{
+        height: 139px !important;
+      }
+    }
+  }
+
+
 }
+
+
+.product_d_flex{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    width: 100%;
+    // transition: 0.3s ease-in-out;
+    &:hover img {
+        transform: scale(1.1);
+    }
+
+    .image_div {
+        width: 191px;
+        height: 242px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.2s ease-in-out;
+        }
+    }
+    
+
+}
+
+
