@@ -53,6 +53,14 @@
     </div>
 </section>
 
+<section class="listing">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        @for(l of allData; track l){
+            <h2 class="text-gray-50 ">{{l?.title}}</h2>
+        }
+    </div>
+</section>
+
 <section class="gs_features">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div class="flex flex-row w-full gap-x-6">
@@ -683,3 +691,4 @@
 
     </div>
 </section>
+
