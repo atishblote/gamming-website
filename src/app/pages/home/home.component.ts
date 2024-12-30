@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalService } from '../../services/global.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -14,15 +15,15 @@ export class HomeComponent implements OnInit{
   constructor(private global: GlobalService){}
 
   ngOnInit(): void {
-    this.global.getWithToken('all-listings').subscribe({
-      next:(res:any)=>{
-        this.allData = res.data
-        console.log(this.allData)
-      },
-      error: (err:any)=>{
-        console.log(err.error)
-      }
-    })
+    // this.global.getWithToken('all-listings').subscribe({
+    //   next:(res:any)=>{
+    //     this.allData = res.data
+    //     console.log(this.allData)
+    //   },
+    //   error: (err:any)=>{
+    //     console.log(err.error)
+    //   }
+    // })
   }
 
 }

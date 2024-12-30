@@ -1,0 +1,28 @@
+.gs_blog_single {
+  background-color: rgb(31 41 55 / 83%);
+    
+  .content-block-component {
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      margin-top: 20px;
+    }
+    a {
+      color: #e4b528;
+    }
+    ul {
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+  }
+
+  .sidebar{
+    .sticky_top {
+        position: sticky;
+        top: 50px;
+    }
+  }
+}

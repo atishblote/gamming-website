@@ -62,6 +62,31 @@
       },
     });
 
+    document.addEventListener('DOMContentLoaded', () => {
+      const swiper = new Swiper('.related-blog', {
+        slidesPerView: 3, // Default for desktop
+        spaceBetween: 10, // Space between slides
+        breakpoints: {
+          320: {
+            slidesPerView: 1, // For mobile screens
+          },
+          768: {
+            slidesPerView: 2, // For tablets
+          },
+          1024: {
+            slidesPerView: 3, // For desktops
+          },
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    });
 
 
 
