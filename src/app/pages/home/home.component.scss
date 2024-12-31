@@ -200,3 +200,23 @@
 }
 
 
+@media screen and (max-width: 768px){
+  .content_div {
+    width: 95% !important;
+    right: 10px !important;
+    position: absolute !important;
+    bottom: 20px !important;
+    top: unset !important;
+    height: fit-content !important;
+  }
+  .d_f_latest_post {
+    grid-template-columns:100% !important;
+
+
+    .feature_img{
+      height: 224px;
+      width: 100%;
+      object-fit: cover;
+  }
+} 
+}

@@ -19,6 +19,13 @@
     .margin_top{
         margin-top: -110px;
     }
+    
+}
+
+@media screen and (max-width: 768px) {
+  .gs_about_features   .margin_top{
+    margin-top: 0;
+}
 }
 
 
