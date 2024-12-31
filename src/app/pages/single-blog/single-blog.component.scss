@@ -26,3 +26,13 @@
     }
   }
 }
+
+
+@media screen and (max-width: 768px) {
+  .gs_blog_single .content-block-component  h2{
+    font-size: 1.3rem;
+}
+ul,p {
+  font-size:0.85rem !important;
+}
+}
