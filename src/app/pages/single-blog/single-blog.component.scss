@@ -7,6 +7,12 @@
       margin-bottom: 15px;
       margin-top: 20px;
     }
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      margin-top: 20px;
+    }
     a {
       color: #e4b528;
     }
@@ -31,6 +37,9 @@
 @media screen and (max-width: 768px) {
   .gs_blog_single .content-block-component  h2{
     font-size: 1.3rem;
+}
+.gs_blog_single .content-block-component  h3{
+  font-size: 1.3rem;
 }
 ul,p {
   font-size:0.85rem !important;
