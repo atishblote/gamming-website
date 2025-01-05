@@ -3,11 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "npm run serve:ssr",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "build:ssr": "ng build --configuration production && ng run gamming-website:server",
+    "serve:ssr": "node dist/gamming-website/server/main.js",
+    "clean": "rimraf dist",
     "test": "ng test",
-    "serve:ssr:gamming-website": "node dist/gamming-website/server/server.mjs"
+    "watch": "ng build --watch --configuration development"
   },
   "private": true,
   "dependencies": {
